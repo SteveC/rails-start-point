@@ -1,18 +1,10 @@
-<div class="container mt-5">
-  <div class="row justify-content-center">
-    <div class="col-md-6 text-center">
-      <h1 class="mb-4">Welcome to Rails App</h1>
-      <% if current_user %>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Hello, <%= current_user.name %></h5>
-            <p class="card-text">You are signed in with <%= current_user.email %></p>
-            <%= link_to 'Sign Out', signout_path, class: 'btn btn-danger' %>
-          </div>
-        </div>
-      <% else %>
-        <%= button_to 'Sign in with Google', auth_path(:google_oauth2), class: 'btn btn-primary', data: { turbo: false } %>
-      <% end %>
-    </div>
-  </div>
+<div class="container mt-5 text-center">
+  <h1 class="display-4 mb-4">Welcome to Your Rails Application</h1>
+  <p class="lead">
+    This is the home page. You can start building your features here.
+  </p>
+  <hr class="my-4">
+  <p>
+    If you need help, check out the Rails documentation or ask a question.
+  </p>
 </div>
